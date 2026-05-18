@@ -1,0 +1,122 @@
+/* Mengatur background section profil menjadi hitam agar elegan */
+.profil-section {
+    padding: 80px 5%;
+    background-color: #000000;
+    color: white;
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+}
+
+.profil-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bagian Gambar Kiri */
+.profil-image {
+    flex: 1;
+}
+
+.profil-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(10, 25, 47, 0.8);
+    border: 2px solid #1f3b60;
+    transition: transform 0.4s ease;
+    object-fit: cover;
+}
+
+.profil-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Bagian Teks Kanan */
+.profil-text {
+    flex: 1;
+}
+
+.page-title {
+    color: #d1d5db; /* Biru muda agar menyala di background hitam */
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.profil-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #4da8da;
+    font-weight: 400;
+}
+
+.profil-text p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #d1d5db;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Desain Kotak Visi & Misi */
+.visi-misi {
+    display: flex;
+    gap: 20px;
+}
+
+.visi-misi .box {
+    background-color: #0a192f; /* Background biru tua */
+    padding: 25px 20px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #1f3b60;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visi-misi .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(77, 168, 218, 0.2);
+}
+
+.visi-misi .box i {
+    font-size: 35px;
+    color: #4da8da;
+    margin-bottom: 15px;
+}
+
+.visi-misi .box h4 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.visi-misi .box p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: #a0b2c6;
+    text-align: center;
+}
+
+/* Responsif untuk layar HP (Potrait) */
+@media (max-width: 900px) {
+    .profil-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil-text p {
+        text-align: center;
+    }
+
+    .visi-misi {
+        flex-direction: column;
+    }
+    
+    .profil-image {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,9 @@
+.kontak-section { padding: 50px 5%; text-align: center; }
+.page-title { color: #0a192f; margin-bottom: 40px; font-size: 2.5rem; }
+.kontak-box { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+.info-item {background: #0a192f; color: white; padding: 40px 20px; border-radius: 15px; width: 100%; max-width: 300px; transition: 0.3s;}
+.info-item:hover { transform: scale(1.05); }
+.info-item i { font-size: 40px; color: #4da8da; margin-bottom: 15px; }
+.medsos-links { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
+.medsos-links a { color: white; font-size: 24px; transition: color 0.3s; }
+.medsos-links a:hover { color: #4da8da; }
